@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="passgen.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@500&display=swap" rel="stylesheet">
+</head>
+<body onload="loading()">
+    <pre class="h1">
+        PASSWORD
+        GENERATOR
+    </pre>
+    <div class="main-div">
+        <div class="gen">
+            <input type="text" placeholder="Generated Code..." class="gcode">
+                <img src="images/icons8-refresh-48.png" alt="ref" onclick="generateCode()">
+                <div class="hamburger">
+                    <div class="ham1"></div>
+                    <div class="ham2"></div>
+                    <div class="ham3"></div>
+                    <div class="ham4"></div>
+                </div>
+            <input type="button" value="COPY PASSWORD_    &rarr;" class="copy" onclick="copy()">
+            <span id="rs-bullet" class="rs-label">0</span>
+            <input type="range" name="" id="lengthp" min="1" max="100" value="1" class="slider" onchange="generateCode()">
+            <form name="main"> 
+                <table width="60%">
+                    <tr>
+                        <td>
+                            <label class="container">Uppercase Letters
+                                <input type="checkbox" name="" id="up" class="ch1" onclick="countCheckboxes()">
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">Lowercase Letters
+                                <input type="checkbox" name="" id="low" class="ch2" onclick="countCheckboxes()">
+                                <span class="checkmark"></span>
+                            </label>                  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="container">Numbers
+                                <input type="checkbox" name="" id="num" class="ch3" onclick="countCheckboxes()">
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">Symbols
+                                <input type="checkbox" name="" id="sym" class="ch4" onclick="countCheckboxes()">
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="hist">
+            <h2>PASSWORD HISTORY</h2>
+            <table width="100%" class="history" style='table-layout:fixed;'>
+                <col width="90%">
+                <col width="10%">
+            </table>
+            <input type="button" class="clear" onclick="clearUL()" value="Clear History">
+        </div>
+    </div>
+    <script src="passgen.js"></script>
+</body>
+</html>

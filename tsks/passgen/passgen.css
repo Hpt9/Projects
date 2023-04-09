@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tomorrow', sans-serif;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+}
+.h1{
+    color: gold;
+    margin-top: 6%;
+    margin-left: 4%;
+    font-size: 50px;
+}
+.main-div{
+    font-size: 16px;
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    text-wrap: none;
+    justify-content: center;
+    display: flex;
+}
+.gen{
+    width: 50%;
+    height: 55vh;
+    background-color: black;
+    display:    flexbox;
+}
+.hist{
+    width: 30%;
+    height: 45vh;
+    display:inline-block;
+    overflow-y: scroll;
+}
+.kpy3{text-align: center;}
+.gcode2{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 0;
+    left: 0;
+}
+.copy,.slider{display: block;}
+.gcode{
+    font-size: 18px;
+    width: 80%;
+    display: inline;
+    border:1px solid rgba(0, 240, 255, 1);
+    padding: 12px 60px 12px 12px;
+    height: 40px;
+    color: rgb(16, 222, 253);
+    background-color:rgb(3, 49, 56) ;
+    margin-bottom: 20px;
+}
+.gcode:focus{outline: none;}
+input[type=range] {
+    height: 38px;
+    -webkit-appearance: none;       
+    margin:30px 0;
+    width: 80%;
+    background-color: black;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: rgb(16, 222, 253);
+    border-radius: 5px;
+    position: relative;
+}
+input[type=range]::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    background: gold;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px;
+    z-index:2000;
+    position: relative;
+}
+table{color: white;}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: -3px;
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border: 1px solid gold;
+}
+.container input:checked ~ .checkmark {background-color: gold;} 
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {display: none;}
+img{
+    width: 25px;
+    height: 25px;
+    margin-bottom: -7px;
+    margin-left: -35px;
+}
+.hamburger{
+    display: inline-block;
+    position: relative;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    padding: 3px;
+}
+.hamburger div{
+    width: 18px;
+    height: 2px;
+    background-color: white;
+    margin-top: 3px;
+    border-radius:20px ;
+}
+.rs-label {    
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 15px;
+    top: 40px;
+    margin-left: -6px;
+}
+.rs-label::after{
+    display: block;
+    font-size: 5px;
+}
+h2{
+    color: white;
+    font-size: 25px;}
+.kpya{
+    display: inline-block;
+    position: relative; 
+    left: 50px;
+    margin-left: 10px;
+}
+.bn,.bn2{color: white;}
+.bn{overflow-x: hidden;}
+.hist2{
+    font-size: 13px;
+    color: gray;
+}
+.clear{
+    color: gold;
+    background-color: black;
+    border: none;
+    margin-top: 15px;
+    margin-left: 15px;
+    display: none;
+}
+.clear:hover{cursor: pointer;}
+.copy,.copy:after {
+    width: 37%;
+    height: 40px;
+    font-size: 18px;
+    background: linear-gradient(45deg, transparent 4%, rgba(248, 239, 0, 1) 4%);
+    border: 0;
+    color: black;
+    box-shadow: 2px 0px 0px red;
+    outline: transparent;
+}
+.copy:hover{cursor: pointer;}
+.koopya{
+    margin: 0;
+    padding: 0;
+}
+.koopya:hover{cursor: pointer;}

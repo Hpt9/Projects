@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Watch</title>
+</head>
+<body onload="startwatch()">
+    <div id="full">
+        <div class="watch">
+            <div class="dotes">
+                <div class="r12" id="r12">12</div>
+                <div class="r1" id="r1"><div id="rr1">1</div></div>
+                <div class="r2" id="r2"><div id="rr2">2</div></div>
+                <div class="r3" id="r3"><div id="rr3">3</div></div>
+                <div class="r4" id="r4"><div id="rr4">4</div></div>
+                <div class="r5" id="r5"><div id="rr5">5</div></div>
+                <div class="r6" id="r6"><div id="rr6">6</div></div>
+                <div class="r7" id="r7"><div id="rr7">7</div></div>
+                <div class="r8" id="r8"><div id="rr8">8</div></div>
+                <div class="r9" id="r9"><div id="rr9">9</div></div>
+                <div class="r10" id="r10"><div id="rr10">10</div></div>
+                <div class="r11" id="r11"><div id="rr11">11</div></div>
+            </div>
+            <div class="hours" id="hour">
+                <div class="main3"></div>
+            </div>
+            <div class="minutes" id="minut">
+                <div class="main2"></div>
+            </div>
+            <div class="seconds" id="sec">
+                <div class="main"></div>
+            </div>
+            <div class="circle"></div>
+            <div id="vaxt2">
+                <p id="vaxt9"></p>
+                <p id="day"></p>
+            </div>
+            <div id="alarm3">
+                <img id="alpb" src="Images/alarmpblack-removebg-preview.png" alt="" width="20px" height="20px" style="display: inline;position: relative;">
+                <p id="alarmp" style="display: inline;position: relative;">00:00</p>
+            </div>
+        </div>
+
+    <section class="bgruop" id="bgruop">
+
+        <button class="mode dmode" id="mode" onclick="darkModeChanger()"></button>
+        <button class="alarm" id="alarm" onclick="openAlarm()">Alarm Qur</button>
+        <button class="san" id="san" onclick="countupTimer()">Saniyə Ölçən</button>
+        <button class="geri" id="geri" onclick="countDownTimer()">Geri Sayım</button>
+        
+    </section>
+    <div class="alarm-area">
+        <h2>Saatı Ayarlayın:</h2>
+
+        <div id="time">
+        <input type="time" id="appt" name="appt" min="09:00" max="24:00" value="" required>
+        <select id="audios">
+            <option value="Audio File Secin" disabled selected>Audio File Seçin</option>
+            <option class="alaem" id="ses1" value="1">Səs 1</option>
+            <option class="alaem" id="ses2" value="2">Səs 2</option>
+        </select>
+            <div id="pp">
+                <img id="pp1" src="Images/play_arrow_FILL0_wght400_GRAD0_opsz48.png" alt="Play" onclick="playmusic()">
+                <img id="pp2" src="Images/pause_FILL0_wght400_GRAD0_opsz48.png" alt="Pause" onclick="stopmusic()">
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button class="alarm1" id="alarm2" onclick="alarmReady()">Hazırdır</button>
+            <button class="alarm2" id="alarm2" onclick="clear()">Sıfırla</button>
+        </div>
+
+        <button id="close" onclick="closeAlarm()">x</button>
+    </div>
+    
+    <div class="saniye">
+        
+        <div class="merge">
+            <img src="Images/chrono-removebg-preview.png" alt="chrono">
+            <div class="stick" id="test">
+                <div class="main4"></div>
+            </div>
+            <div class="circle2"></div>
+
+
+            <div class="stick2" id="test2">
+                <div class="main42"></div>
+            </div>
+            <div class="circle22"></div>
+        </div>
+
+
+
+        
+        <div id="vaxt"><label id="minutes">00</label>:<label id="seconds">00</label></div>
+        <ol id="lits">
+
+        </ol>
+        <div id="sbtns">
+            <button id="start" onclick="startTimer() , voidd(), voidd2()">Başla</button>
+            <button id="add" onclick="addToList()">Əlavə Et</button>
+            <button id="restart" onclick="clearTimer()">Sıfırla</button>
+        </div>
+
+        <button id="cllist" onclick="clearlist()">Siyahını Boşalt</button>
+
+        <button id="close" onclick="closeTimer()">x</button>
+    </div>
+
+    <div class="gerisayim">
+        <h2>Saatı Ayarlayın:</h2>
+        
+        <input type="time" id="geri4" name="appt" min="09:00" max="22:00" required>
+
+        <div id="gbuttons">
+            <button class="geri1" id="geri1" onclick="startCdTimer()">Başla</button>
+            <button class="geri2" id="geri2" onclick="clearCdTimer()">Sıfırla</button>
+        </div>
+
+        <h1 id="timeleft"></h1>
+
+        <button id="close" onclick="closeCdTimer()">x</button>
+
+    </div>
+    
+    </div>
+    <script src="JS/script.js">  
+    </script>
+</body>
+</html>

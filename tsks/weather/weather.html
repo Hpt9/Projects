@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap" rel="stylesheet">
+</head>
+<body onload="getData()">
+    <div class="cent nosunny">
+        <div class="loc">
+            <div class="select-menu">
+                <div class="select">
+                  <span><img src="images/location.png" class="locimg" width="25px" height="25px" alt=""></span><span class="span">Azerbaijan, Baku</span><span class="arrow">&#8964</span>
+                </div>
+                <div class="options-list">
+                </div>
+            </div>
+        </div>
+        <div class="imgwe"><img class="imgw2" src="" width="150px" height="150px" alt=""></div>
+        <div class="noww"></div>
+        <div class="precipations">
+            <pre>
+            Precipations
+            Max:<span class="max"></span>º Min:<span class="min"></span>º
+            </pre>
+        </div>
+        <table class="humidity sunny2">
+            <td class="rain"></td>
+            <td class="hum"></td>
+            <td class="wind"></td>
+        </table>
+        <div class="grid-container sunny2">
+            <div class="item0">Today</div>
+            <div class="item05 date"></div>
+            <div class="item1">
+                <div class="item11"></div>
+                <div><img class="item1img" width="30px" height="30px" src="" alt=""></div>
+                <div class="hour1"></div>
+            </div>
+            <div class="item2">
+                <div class="item22"></div>
+                <div ><img class="item2img" width="30px" height="30px" src="" alt=""></div>
+                <div class="hour2"></div>
+            </div>
+            <div class="item3">
+                <div class="item33"></div>
+                <div><img class="item3img" width="30px" height="30px" src="" alt=""></div>
+                <div class="hour3"></div>
+            </div>
+            <div class="item4">
+                <div class="item44"></div>
+                <div><img class="item4img" width="30px" height="30px" src="" alt=""></div>
+                <div class="hour4"></div>
+            </div>
+        </div>
+        <div class="nextf sunny2">
+            <div class="frcst">Next Forecast <img style="position:relative;top: 3px;" src="images/calendar.png" alt="" srcset="" width="16px" height="16px"></div>
+            <table width="100%">
+                <tr onclick="getValue(1)">
+                    <td class="day1">day2</td>
+                    <td class="c"><img class="icon1" src="" alt="" width="30px" height="30px"></td>
+                    <td class="w1"><span class="dayw1">a</span>&nbsp;&nbsp; <span class="dayn1">b</span></td>
+                </tr>
+                <tr onclick="getValue(2)">
+                    <td class="day2">day3</td>
+                    <td class="c"><img class="icon2" src="" alt="" width="30px" height="30px"></td>
+                    <td class="w1"><span class="dayw2">a</span>&nbsp;&nbsp; <span class="dayn2">b</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/gh/manuelmhtr/countries-and-timezones@latest/dist/index.min.js" type="text/javascript"></script> 
+    <script src="weather.js"></script>
+</body>
+</html>

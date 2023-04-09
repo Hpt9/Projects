@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.search{
+    border-bottom: 2px solid lightgray;
+    height: 64px;
+    width: 100%;
+}
+#search{
+    margin: 11px 30px;
+    width: 110px;
+    height: 40px;
+    background-image: url("images/search_FILL0_wght400_GRAD0_opsz48.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 6px;
+    padding-left: 40px;
+    padding-right: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: lightgray;
+    border-radius: 20px;  
+}
+#search:focus{
+    outline: 1px solid rgb(174, 174, 174);
+    width: 250px;
+    transition: all .3s ease-in-out;
+}
+#cards {
+    align-items: center;
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.item3 {grid-area: left;}
+.item35{grid-area: center;}
+.item36{grid-area: center2;}
+.item4 {grid-area: right;}
+.grid-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas:'left center center right';
+    gap: 10px;
+    border: 2px solid rgb(227, 227, 227);
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+    padding: 10px;
+    width: 70%;
+    clear: right;
+}
+.item35{border-right: 1px solid rgb(227, 227, 227);}
+.grid-container > div {background-color: rgba(255, 255, 255, 0.8);}
+.item3{
+    width: fit-content;
+    height: fit-content;
+}
+.item4 table{text-align: center;}
+.hed{
+    font-size: 21px;
+    margin-right:10px;
+    font-weight: bold;
+}
+.price{
+    font-size: 13px;
+    padding: 2px 7px;
+    color: #657DD0;
+    background-color: #F2F5FF;
+    border-radius:9px;
+}
+.item4 table{
+    margin-top: 20px;
+    text-align: center;
+}
+.point{
+    font-size: 24px;
+    color:rgba(26, 183, 108, 1);
+    font-weight: bold;
+}
+.infbutton{
+    border: none;
+    background-color: rgba(26, 183, 108, 1);
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 3px 10px;
+}
+.csd{
+    justify-content: center;
+    align-items: center;
+}
+.arrowdown{
+    position: relative;
+    bottom: 5px;
+}
+.rate2{
+    width: 14px;
+    height: 14px;
+    color: white;
+}
+.point2{
+    font-size: 10px;
+    color: black;
+    position: relative;
+    bottom: 4px;
+}
+@media only screen and (max-width:1024px){
+    img{
+        transform: translate(0%, 25%);
+        width: 100px;
+        height: 70px;
+    }
+    .hed{font-size: 18px;}
+    .item35 p{font-size: 12px;}
+    .category{font-size: 11px;}
+}

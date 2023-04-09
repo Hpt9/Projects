@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+#st-time{
+    background-color: rgb(14, 14, 65);
+    position: absolute;
+    top: 61%;
+    left: 47%;
+    margin: -150px 0 0 -150px;
+    width: 20%;
+    height: 200px;
+    border-radius: 5px;
+    transition: all .9s ease;
+    display: none;
+    z-index: 10;
+}
+#time{
+    position: relative;
+    top: 15%;
+    left: 10%;
+    width: 250px;
+    height: 60px;
+    margin: 0;
+    border-radius: 5px;
+}
+.rnd:hover{
+    transform: scale(1.2);
+}
+.basla{
+    width: 250px;
+    height: 60px;
+    position: relative;
+    top: 25%;
+    left: 10%;
+    margin: 0;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.basla:hover{
+    background-color: white;
+    color: black;
+}
+.gameplace{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 25%;
+    height: 45%;
+    background-color: rgb(14, 14, 65);
+    border-radius: 8px;
+    z-index: 9;
+    -webkit-box-shadow: 0px 11px 29px -3px #696969; 
+box-shadow: 0px 11px 29px -3px #696969;
+}
+.gameplace h3{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:20px;
+}
+.netice{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+table{
+    margin-top: 10px;
+    width: 100%;
+    height: 70%;
+}
+table tr td{
+    padding-left:20px;
+}
+table tr td div{
+    width: 85%;
+    height: 80%;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+}
+table tr td div:hover{
+    cursor: pointer;
+}
+.final-scene{
+    position: absolute;
+    top: 27.5%;
+    left: 30%;
+    width: 40%;
+    height: 48%;
+    background-color: rgb(14, 14, 65);
+    z-index: 11;
+    display: none;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 35px 3px #141465; 
+box-shadow: 0px 0px 35px 3px #141465;
+}
+.final-scene h1{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.final-scene h2{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 45px;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.playAgain{
+    width: 85%;
+    height: 15%;
+    background-color: rgb(14, 14, 65);
+    font-size: 24px;
+    color: white;
+    border-color: white;
+    margin-top: 20px;
+}
+.playAgain:hover{
+    color: black;
+    background-color: white;
+}
+.true,.false{
+    width: 260px;
+    height: 130px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border-radius: 9px;
+    color: white;
+    display: none;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    top: 46%;
+    left: 39.5%;
+    z-index: 20;
+    animation: fade .3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+.false{
+    background-color: red;
+    -webkit-box-shadow: 0px 0px 107px -4px rgba(255,0,0,1);
+    -moz-box-shadow: 0px 0px 107px -4px rgba(255,0,0,1);
+    box-shadow: 0px 0px 107px -4px rgba(255,0,0,1);
+}
+.true{
+    background-color: green;
+    -webkit-box-shadow: 0px 0px 107px -4px rgba(0,255,10,1);
+    -moz-box-shadow: 0px 0px 107px -4px rgba(0,255,10,1);
+    box-shadow: 0px 0px 107px -4px rgba(0,255,10,1);
+}
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startMenu()">
+    <div id="st-time">
+        <select id="time">
+            <option value="1">1 Dəqiqə</option>
+            <option value="3">3 Dəqiqə</option>
+            <option value="5">5 Dəqiqə</option>
+            <option value="10">10 Dəqiqə</option>
+        </select>
+        <input class="basla" type="button" value="Başla" onclick="getTime()" style="display: block;">
+    </div>
+
+    <div class="gameplace">
+        <h3 class="trgb"></h3>
+        <p class="netice">Nəticə: 0</p>
+
+        <table>
+            <tr>
+                <td><div class="rnd" onclick="checkColor(this.id)" id="0"></div></td>
+                <td><div class="rnd" onclick="checkColor(this.id)" id="0"></div></td>
+                <td><div class="rnd" onclick="checkColor(this.id)" id="0"></div></td>
+            </tr>
+
+            <tr>
+                <td><div class="rnd" onclick="checkColor(this.id)" id="0"></div></td>
+                <td><div class="rnd" onclick="checkColor(this.id)" id="0"></div></td>
+                <td><div class="rnd" onclick="checkColor(this.id)" id="0"></div></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="final-scene">
+        <h1>Bitdi!</h1>
+        <h2 class="score">Nəticə: 0</h2>
+        <h2 id="selectedtime"></h2>
+        <button class="playAgain" onclick="playAgain()">Təkrar oyna</button>
+    </div>
+    <script src="script.js"></script>
+    <div class="true">Doğru!</div>
+    <div class="false">Yanlış!</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+table{
+    width: 100%;
+}
+.butn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.NT,.NT2{
+    font-size: 30px;
+    display: none;
+}
+
+button{
+    display: inline;
+    width: 200px;
+    margin-left: 7px;
+}
+.btn{
+    border: none;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.delete{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: url("delete.png");
+    background-size: contain;
+}
+.delete:hover{
+    background: url("delete2.png");
+    background-size: contain;
+}
+/* .material-symbols-outlined{
+    color: red;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+  
+} */
+
+
+.spinner {
+    margin: 50px auto 0;
+    width: 70px;
+    text-align: center;
+}
+
+.spinner > div {
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 100%;
+    display: inline-block;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+  
+.spinner .bounce1 {
+    animation-delay: -0.32s;
+}
+  
+.spinner .bounce2 {
+    animation-delay: -0.16s; 
+}
+ 
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+        transform: scale(0);
+    } 40% { 
+        transform: scale(1.0);
+    }
+}
