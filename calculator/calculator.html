@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link href="http://fonts.cdnfonts.com/css/calculator" rel="stylesheet">
+  </head>
+<body>
+
+ 
+<table class="calculator" >
+  <tr>
+    <td colspan="4"><input class="result result2" type="text" id="result2" value="0" disabled/></td>
+  </tr>
+  <tr>
+    <td colspan="4"><input class="result" type="text" id="result" value="0" disabled/></td>
+  </tr>
+  <tr>
+    <td colspan="2"> <input type="button" value="AC" onclick="cle()" class="AC" /> </td>
+    <td> <input type="button" value="/" onclick="display('/')"  id="op" /> </td>
+    <td> <input type="button" value="x" onclick="display('*')"  id="op" /> </td>
+    </tr>
+  <tr>
+    <td> <input id="butn" type="button" value="7" onclick="display('7')" /> </td>
+    <td> <input id="butn" type="button" value="8" onclick="display('8')" /> </td>
+    <td> <input id="butn" type="button" value="9" onclick="display('9')" /> </td>
+    <td> <input type="button" value="-" onclick="display('-')"  id="op" /> </td>
+    
+  </tr>
+  <tr>
+    <td> <input id="butn" type="button" value="4" onclick="display('4')" /> </td>
+    <td> <input id="butn" type="button" value="5" onclick="display('5')" /> </td>
+    <td> <input id="butn" type="button" value="6" onclick="display('6')" /> </td>
+    <td> <input type="button" value="+" onclick="display('+')"  id="op" /> </td>
+  </tr>
+  <tr>
+    <td> <input id="butn" type="button" value="1" onclick="display('1')" /> </td>
+    <td> <input id="butn" type="button" value="2" onclick="display('2')" /> </td>
+    <td> <input id="butn" type="button" value="3" onclick="display('3')" /> </td>
+    <td rowspan="2"> <input type="button" class="ber" value="=" onclick="calculate()" id="btn" /> </td>
+</tr>
+  <tr>
+    <td colspan="2"> <input id="butn" type="button" value="0" onclick="display('0')" /> </td>
+    <td> <input id="butn" type="button" value="." onclick="display('.')" /> </td>
+    
+ 
+    
+    
+  </tr>
+</table>
+ 
+<script type="text/javascript" src="scriptt.js"></script>
+ 
+</body>
+</html>

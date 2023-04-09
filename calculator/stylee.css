@@ -1,0 +1,79 @@
+*{
+    font-size: large;
+    font-weight: bold;
+}
+th, td {
+    padding: 0;
+}
+.calculator {
+    padding: 10px;
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    background-color: #1c1c1c;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.result {
+    font-family: 'Calculator', sans-serif;
+    font-size: 30px;
+    text-align: right;
+    background-color: #1c1c1c;
+    color: white;
+    width: 100%;
+    height: 60%;
+    border: none;
+    margin-top: 0;
+}
+.result2{
+    font-family: 'Calculator', sans-serif;
+    font-size: 18px;
+    text-align: right;
+    background-color: #1c1c1c;
+    color: goldenrod;
+    width: 100%;
+    height: 25%;
+    border: none;
+    margin-bottom: 0;
+}
+.AC{
+    background-color: red;
+}
+.AC:hover{
+    background-color: goldenrod;
+}
+#btn {
+    background-color: #282686;
+    color: white;
+}
+#btn:hover{
+    background-color: goldenrod;
+}
+#butn{
+    color: white;
+    background-color: #3b3b3b;
+}
+#butn:hover{
+    background-color: #adadad;
+}
+#op {
+    background-color: #7c7c7c;
+    color: white;
+}
+#op:hover{
+    background-color: #adadad;;
+}
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    
+    color: #D4D4D2;
+    border: solid black 0.5px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
